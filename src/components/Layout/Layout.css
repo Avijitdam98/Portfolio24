@@ -1,0 +1,170 @@
+.sidebar-section {
+    display: flex;
+    background-color: black;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #1e1e2c;
+    width: 90px;
+.sidebar-section {
+    display: flex;
+    background-color: #212121; /* Darker background color */
+    transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.sidebar-section:hover {
+    background-color: #333; /* Change background color on hover */
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #1e1e2c;
+    width: 90px;
+    position: fixed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transition: width 0.3s ease; /* Add a transition effect */
+}
+
+.sidebar:hover {
+    width: 200px; /* Increase width on hover */
+}
+
+.sidebar-toggle {
+    width: 200px;
+    background-color: #f29f67; /* Add a background color */
+    padding: 10px;
+    border-radius: 10px; /* Add a border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.sidebar-toggle:hover {
+    background-color: #ff9900; /* Change background color on hover */
+}
+
+.sidebar-toggle-icons {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    animation: spin 2s linear infinite; /* Add an animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.sidebar-toggle {
+    width: 200px;
+}
+
+.sidebar-toggle-icons {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+
+}
+
+.sidebar-toggle-icons p svg {
+    background-color: #f29f67;
+    color: white;
+    border-radius: 88%;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar-toggle-icons p svg:hover {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.sidebar-section {
+    display: flex;
+    background-color: #212121;
+    perspective: 1000px;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+}
+
+.sidebar-section:hover {
+    background-color: #333;
+    transform: rotateY(10deg) translateZ(20px);
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #1e1e2c;
+    width: 90px;
+    position: fixed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease, transform 0.3s ease;
+    transform-origin: left;
+}
+
+.sidebar:hover {
+    width: 200px;
+    transform: rotateY(-10deg);
+}
+
+.sidebar-toggle {
+    width: 200px;
+    background-color: #f29f67;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+.sidebar-toggle-icons {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sidebar-toggle-icons p svg:hover {
+    animation: pulse 1s ease-in-out infinite, colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        fill: #f29f67;
+    }
+    50% {
+        fill: #ff9900;
+    }
+}

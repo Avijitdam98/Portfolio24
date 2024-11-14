@@ -1,0 +1,135 @@
+.techstack {
+    padding-left: 130px;
+    margin-top: 60px;
+}
+
+.techstack hr {
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.techstack h2 {
+    font-weight: bold;
+    color: #138781;
+}
+
+.techstack .card {
+    cursor: pointer;
+}
+
+.techstack .tech-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.techstack .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #138781;
+    color: white;
+
+    transition: 1s;
+}
+
+/* =============================== */
+@media (max-width: 600px) {
+    .techstack {
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .techstack hr {
+        width: 280px;
+    }
+}
+
+/* ======== DARK MODE ========= */
+
+#dark .techstack hr,
+#dark .techstack h2,
+#dark .techstack .card:hover {
+    color: #00ffcc;
+    /* Neon green color */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    /* Neon glow effect */
+}
+#dark .techstack .card {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+}
+
+#dark .techstack .card:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.techstack {
+    padding-left: 130px;
+    margin-top: 60px;
+    background: linear-gradient(to right, #1e1e2c, #138781);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.techstack:hover {
+    background: linear-gradient(to right, #138781, #1e1e2c);
+    transform: scale(1.02);
+}
+
+.techstack .card {
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.techstack .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.techstack .tech-icon {
+    font-size: 2.5rem;
+    margin-right: 12px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.techstack .tech-icon:hover {
+    color: #00ffcc;
+}
+
+@media (max-width: 600px) {
+    .techstack {
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        background: linear-gradient(to right, #1e1e2c, #138781);
+    }
+
+    .techstack hr {
+        width: 280px;
+    }
+}
+
+#dark .techstack {
+    background: linear-gradient(to right, #000000, #333333);
+}
+
+#dark .techstack .card {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #00ffcc;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#dark .techstack .card:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

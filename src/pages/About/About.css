@@ -1,0 +1,140 @@
+.about {
+    margin: 30px 0px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    perspective: 1000px; /* 3D perspective */
+    transition: transform 0.5s ease-in-out;
+    background: #222; /* Dark background */
+    border-radius: 15px; /* Smooth rounded corners */
+    color: #eee; /* Light text color */
+    max-width: 80%; /* Adjust to fit various screens */
+}
+
+.about:hover {
+    transform: rotateY(10deg); /* 3D rotation */
+}
+
+.about-img img {
+    border-radius: 50%; /* Make image rounded */
+    width: 100%;
+    max-width: 400px; /* Ensure image doesn't exceed a certain size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* Add transition for box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for more 3D effect */
+    border: 5px solid #555; /* Add a darker border */
+}
+
+.about-img img:hover {
+    transform: scale(1.1) rotate(10deg); /* Rotate and scale on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+    text-align: center; /* Center align text */
+}
+
+.about-content h1 {
+    color: #00ffcc; /* Bright color for modern look */
+    font-family: 'Cursive', sans-serif; /* Use cursive font */
+    border-bottom: 2px solid #00ffcc; /* Bright border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+<<<<<<< Tabnine <<<<<<<
+.typewriter {//+
+    overflow: hidden;//+
+    border-right: .15em solid #00ffcc; /* Cursor *///+
+    white-space: nowrap;//+
+    margin: 0 auto;//+
+    letter-spacing: .15em;//+
+    animation: //+
+        typing 3.5s steps(40, end),//+
+        blink-caret .75s step-end infinite;//+
+}//+
+//+
+@keyframes typing {//+
+    from { width: 0 }//+
+    to { width: 100% }//+
+}//+
+//+
+@keyframes blink-caret {//+
+    from, to { border-color: transparent }//+
+    50% { border-color: #00ffcc; }//+
+}//+
+.about-content p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6; /* Improved readability */
+    color: #ccc; /* Lighter text color */
+    white-space: pre-wrap; /* Preserves spaces and line breaks *///+
+    word-break: break-word; /* Ensures words break correctly *///+
+}
+>>>>>>> Tabnine >>>>>>>// {"source":"chat"}
+
+/* Dark Mode Styles */
+
+#dark .about {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: #eee; /* Ensure text is visible */
+}
+
+#dark .about-content h1 {
+    color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+#dark .about-content p {
+    color: #ddd; /* Make text lighter for better visibility in dark mode */
+}
+
+#dark .about-img img {
+    border-radius: 50%; /* Make image rounded in dark mode as well */
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 600px) {
+    .about {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .about-content h1 {
+        margin-top: 10px;
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .about-content p {
+        padding: 10px;
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+
+    .about-img img {
+        max-width: 90%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Keyframes for Animations */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}

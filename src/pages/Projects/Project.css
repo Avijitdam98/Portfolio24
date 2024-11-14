@@ -1,0 +1,179 @@
+.project {
+    margin: 50px 0px;
+    margin-left: 140px;
+}
+
+.project hr {
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.project h2 {
+    font-weight: bold;
+    color: #138781;
+}
+
+#ads {
+    margin: 30px 0px 30px 0px;
+}
+
+#ads .card-notify-badge {
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    background: #f29f67;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.project .card img {
+    height: 150px;
+    width: 100%;
+}
+
+.card-detail-badge {
+    background-color: #e0b50f;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.card-image-overly {
+    font-size: 20px;
+}
+
+.card-image-overly span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.project .card:hover {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    transition: all 1s ease;
+}
+
+.ad-btn {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    background-color: #138781;
+    color: white;
+    border-radius: 80px;
+    font-size: 16px;
+    line-height: 35px;
+    text-decoration: none;
+    margin: 20px auto 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ad-btn:hover {
+    background-color: white;
+    color: #138781;
+    background: transparent;
+    border: 2px solid #138781;
+    transition: all 0.5s ease;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+
+/* =============================== */
+@media (max-width: 600px) {
+    .project {
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .project hr {
+        width: 280px;
+    }
+
+    .project .card {
+        margin-top: 30px;
+    }
+}
+
+/* ======== DARK MODE ========= */
+
+#dark .project hr,
+#dark .project h2,
+#dark .project .card:hover {
+    color: #00ffcc;
+    /* Neon green color */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    /* Neon glow effect */
+}
+
+.project {
+    margin: 50px 0px;
+    margin-left: 140px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover {
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    transform: scale(1.02);
+}
+
+#dark .project {
+    background: linear-gradient(135deg, #1e1e2c, #2d2d3c);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project .card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+#dark .project .card {
+    background-color: #212121;
+    color: #fff;
+}
+
+#dark .project .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.project .card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
+
+.project .card:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.02) translateZ(20px);
+}
+
+#dark .project .card:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.02) translateZ(40px);
+}

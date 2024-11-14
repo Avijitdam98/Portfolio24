@@ -1,0 +1,238 @@
+/* General Styles */
+.contact {
+    margin-left: 130px;
+    margin-bottom: 60px;
+    padding-top: 50px;
+    background: linear-gradient(to bottom, #ff99cc, #ff66b3); /* Add a gradient background */
+    border-radius: 20px; /* Add a rounded corner */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.card0 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Update shadow color */
+    border-radius: 20px; /* Match the rounded corner */
+    background-color: #fff; /* Add a white background */
+    padding: 20px; /* Add some padding */
+    transition: transform 0.3s ease; /* Add a transition effect */
+}
+
+.card0:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow size on hover */
+}
+
+.card2 {
+    margin: 0px 40px;
+    background-color: #f7f7f7; /* Add a light gray background */
+    padding: 20px; /* Add some padding */
+    border-radius: 20px; /* Match the rounded corner */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card1 .image {
+    padding: 30px;
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Add some animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.contact {
+    animation: fadeIn 2s ease-in-out; /* Fade in the contact section */
+}
+
+/* Add some color to the text */
+.contact h2 {
+    color: #ff99cc; /* Match the gradient color */
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contact p {
+    color: #666; /* Dark gray text color */
+    font-size: 18px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #32cd32; /* Green color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add some padding */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corner */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-image: linear-gradient(to bottom, #32cd32, #228b22); /* Gradient background */
+    background-clip: text; /* Clip background to text */
+    -webkit-background-clip: text; /* Clip background to text for Safari */
+    -webkit-text-fill-color: transparent; /* Make text transparent for Safari */
+}
+
+.button:hover {
+    background-color: #228b22; /* Darker green color on hover */
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow size on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Scale down on click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Decrease shadow size on click */
+}
+
+/* Neon Effect */
+.button {
+    position: relative; /* Required for neon effect */
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #32cd32, #228b22); /* Gradient background */
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover::before,
+.button:hover::after {
+    opacity: 1;
+}
+
+/* Glossy Effect */
+.button {
+    background-image: linear-gradient(to bottom, #32cd32, #228b22); /* Gradient background */
+    background-clip: text; /* Clip background to text */
+    -webkit-background-clip: text; /* Clip background to text for Safari */
+    -webkit-text-fill-color: transparent; /* Make text transparent for Safari */
+}
+
+.button:hover {
+    background-image: linear-gradient(to bottom, #228b22, #32cd32); /* Gradient background on hover */
+}
+
+/* Input Field Styles */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #32cd32; /* Green border on focus */
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.5); /* Green glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Animation for Input Fields */
+@keyframes inputFocus {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.02); }
+}
+
+.input-field:focus {
+    animation: inputFocus 0.3s ease forwards;
+}
+/* 3D Animation */
+.input-field:focus {
+    animation: inputFocus 0.3s ease forwards,
+              inputGlow 0.5s ease infinite;
+}
+
+@keyframes inputFocus {
+    0% { transform: scale(1) rotateX(0deg) rotateY(0deg); }
+    100% { transform: scale(1.02) rotateX(10deg) rotateY(10deg); }
+}
+
+@keyframes inputGlow {
+    0% { box-shadow: 0 0 10px rgba(50, 205, 50, 0); }
+    50% { box-shadow: 0 0 10px rgba(50, 205, 50, 0.5); }
+    100% { box-shadow: 0 0 10px rgba(50, 205, 50, 0); }
+}
+/* Toastify Custom Styles */
+.Toastify__toast {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Custom font */
+    font-size: 16px; /* Larger text */
+    padding: 15px; /* More padding */
+}
+
+/* Success Toast */
+.Toastify__toast--success {
+    background-color: #32cd32; /* Green background */
+    color: #fff; /* White text */
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+    background-color: #ff4d4d; /* Red background */
+    color: #fff; /* White text */
+}
+
+/* Close Button */
+.Toastify__close-button {
+    color: #fff; /* White close button */
+    opacity: 1; /* Fully opaque */
+}
+
+/* Progress Bar */
+.Toastify__progress-bar {
+    background: linear-gradient(to right, #32cd32, #228b22); /* Green gradient */
+}
+/* Toastify Custom Styles */
+.Toastify__toast {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Custom font */
+    font-size: 16px; /* Larger text */
+    padding: 15px; /* More padding */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+    transform: scale(1); /* Initial scale */
+}
+
+.Toastify__toast:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Success Toast */
+.Toastify__toast--success {
+    background-color: #32cd32; /* Green background */
+    color: #fff; /* White text */
+    border-left: 5px solid #228b22; /* Add a border for emphasis */
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+    background-color: #ff4d4d; /* Red background */
+    color: #fff; /* White text */
+    border-left: 5px solid #b22222; /* Add a border for emphasis */
+}
+
+/* Close Button */
+.Toastify__close-button {
+    color: #fff; /* White close button */
+    opacity: 1; /* Fully opaque */
+}
+
+/* Progress Bar */
+.Toastify__progress-bar {
+    background: linear-gradient(to right, #32cd32, #228b22); /* Green gradient */
+}
