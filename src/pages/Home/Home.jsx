@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import Resume from "../../assets/docs/AvijitDam_CV.pdf";
+import Resume from "../../assets/docs/Avijit_Dam_CV.pdf"
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./Home.css";
 
